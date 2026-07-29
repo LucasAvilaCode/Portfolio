@@ -22,6 +22,7 @@ void main() {
 
   // Starts the app.
   runApp(Document(
+    base: '/portfolio/',
     title: 'Lucas Avila | Técnico Universitario en Programación Web (UNSJ)',
     styles: [
       css.import('styles.css'),
@@ -36,6 +37,7 @@ void main() {
       link(
         rel: 'stylesheet',
         href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css',
+        attributes: {'crossorigin': 'anonymous', 'referrerpolicy': 'no-referrer'},
       ),
       link(rel: 'manifest', href: 'manifest.json'),
       script(src: 'flutter_bootstrap.js', async: true),

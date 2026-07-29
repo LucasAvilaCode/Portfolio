@@ -50,6 +50,9 @@ jobs:
       - name: Build Jaspr
         run: jaspr build --verbose
 
+      - name: Add .nojekyll
+        run: touch build/jaspr/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
